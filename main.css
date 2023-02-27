@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: mediumpurple;
+  font-family: sans-serif;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  background-color: #333;
+  transform-origin: left center;
+  transform: rotate(90deg);
+  transition: transform 0.05s;
+}
+
+.hand-hour {
+  width: 25%;
+  height: 8px;
+  background-color: #333;
+  transform-origin: left center;
+  transform: rotate(90deg);
+  transition: transform 0.05s;
+}
+
+.hand-minute {
+  width: 40%;
+  height: 6px;
+  background-color: #333;
+  transform-origin: left center;
+  transform: rotate(90deg);
+  transition: transform 0.05s;
+}
+
+.mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 10%;
+  background-color: #333;
+  transform-origin: top center;
+}
+
+.mark-hour {
+  height: 20%;
+}
+
+.mark-minute {
+  height: 10%;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.timer {
+  font-size: 60px;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #4c4c4c;
+}
+
+.digital-clock {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  color: #1c1c1c;
+  margin-top: 40px;
+}
+
+.date {
+  font-size: 24px;
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
